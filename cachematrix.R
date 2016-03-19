@@ -44,9 +44,6 @@ cacheSolve <- function(x, ...) {
     cache_inv <- solve(data)
   )
   
-  print(result)
-  
-  
   if(result){
     x$setinverse(cache_inv)
     return(cache_inv)
